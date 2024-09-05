@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style/main.css" />
+    <title>Frontend Mentor | Contact form</title>
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <form action="" method="post">
+        <h1>Contact Us</h1>
+        <section>
+          <div>
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname" required />
+          </div>
+
+          <div>
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" required />
+          </div>
+        </section>
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" required />
+
+        <p>Query Type</p>
+        <section class="query">
+          <div>
+            <input type="radio" name="type" id="general" required />
+            <label for="general">General Enquiry</label>
+          </div>
+          <div>
+            <input type="radio" name="type" id="support" required />
+            <label for="support">Support Request</label>
+          </div>
+        </section>
+
+        <label for="message">Message</label>
+        <textarea name="message" id="message"></textarea>
+
+        <div class="check">
+          <input type="checkbox" name="checkbox" id="checkbox" required />
+          <label for="checkbox">I consent to being contacted by the team</label>
+        </div>
+
+        <input type="submit" value="Submit" />
+      </form>
+      <article>
+        <img src="/assets/images/icon-success-check.svg" alt="send" />
+        <h2>Message Sent!</h2>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+      </article>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </footer>
+  </body>
+</html>
